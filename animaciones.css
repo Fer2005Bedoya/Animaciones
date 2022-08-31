@@ -1,0 +1,81 @@
+.Container{
+    border: 1px solid black;
+   display: flex;
+   width: 100%;
+   height: 800px;
+}
+
+h3{
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-left: 10px;
+}
+.Circulo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #AFB4FF;
+    background-color: #AF7AB3;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 2.5s;
+    
+}
+.Circulo:hover{
+    background-color: steelblue;
+    width: 300px;
+    border: 3px solid black;
+}
+
+.Triangulo{
+width: 0;
+height: 0;
+border-right: 150px solid transparent;
+border-left: 150px solid transparent;
+border-bottom: 150px solid #AF7AB3;
+margin-left: auto;
+margin-right: auto;
+clip-path: circle(50% at top left);
+transition-property: clip-path;
+transition-duration: 2s;
+}
+
+.Triangulo:hover{
+    clip-path: circle(150% at top left);
+    background-color: aqua;
+}
+
+.Cuadrado{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #AFB4FF;
+    background-color: #AF7AB3;
+    margin-left: auto;
+    margin-right: auto;
+    transition-property: width;
+    transition-duration: 1.5s;
+}
+
+.Cuadrado:hover{
+    width: 350px;
+    background-color: blueviolet;
+
+}
+
+
+/*Parte 2*/
+.Cuadro1{
+    width: 150px;
+    height: 150px;
+    border: 3px solid black;
+    background-color: #AF7AB3;
+    flex-direction: column-reverse;
+}
+
+.Imagen{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-top: 100px;
+}
